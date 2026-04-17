@@ -27,7 +27,7 @@ gtag('config', 'G-4HD2NT7CER');
 <meta property="article:author" content="Анна Соловйова">
 <meta property="article:section" content="AI in Finance">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI categorization: how FinDone understands your transactions","description":"How FinDone's AI automatically categorizes bank transactions using machine learning.","datePublished":"2026-03-08","dateModified":"2026-03-08","inLanguage":"uk","author":{"@type":"Person","name":"Anna Soloviova","url":"https://findone.xyz/authors#anna"},"publisher":{"@type":"Organization","name":"FinDone","url":"https://findone.xyz","logo":{"@type":"ImageObject","url":"https://findone.xyz/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://findone.xyz/blog/ai-categorization"},"image":{"@type":"ImageObject","url":"https://findone.xyz/og-article.png","width":1200,"height":630},"wordCount":2100,"articleSection":"AI in Finance","keywords":"AI, machine learning, transaction categorization, monobank, FinDone"}
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI-категоризація: як FinDone розуміє ваші транзакції","description":"Як штучний інтелект FinDone автоматично розпізнає категорії витрат з monobank, ПриватБанк та інших банків. Машинне навчання для особистих фінансів.","datePublished":"2026-03-08","dateModified":"2026-03-08","inLanguage":"uk","author":{"@type":"Person","name":"Анна Соловйова","url":"https://findone.xyz/authors#anna"},"publisher":{"@type":"Organization","name":"FinDone","url":"https://findone.xyz","logo":{"@type":"ImageObject","url":"https://findone.xyz/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://findone.xyz/blog/ai-categorization"},"image":{"@type":"ImageObject","url":"https://findone.xyz/og-article.png","width":1200,"height":630},"wordCount":2100,"articleSection":"AI in Finance","keywords":"AI,машинне навчання,категоризація транзакцій,monobank,FinDone"}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"FinDone","item":"https://findone.xyz/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://findone.xyz/blog"},{"@type":"ListItem","position":3,"name":"AI in Finance","item":"https://findone.xyz/blog/topic/ai"},{"@type":"ListItem","position":4,"name":"AI categorization","item":"https://findone.xyz/blog/ai-categorization"}]}
@@ -146,18 +146,18 @@ footer{padding:60px 0 50px;border-top:1px solid var(--line);margin-top:80px}
 </nav>
 
 <header class="art-hero">
-  <nav class="crumb" aria-label="breadcrumb"><a href="index.html">FinDone</a> / <a href="blog.html">Блог</a> / <span>AI у фінансах</span></nav>
-  <div class="art-topic">AI у фінансах</div>
-  <h1>AI-категоризація: як FinDone <em>розуміє ваші транзакції</em></h1>
-  <p class="excerpt">Як модель, навчена на мільйонах транзакцій, визначає, що «Сільпо» — це продукти, а P2P переказ — це обід з друзями. Розбираємо технологію зсередини.</p>
+  <nav class="crumb" aria-label="breadcrumb"><a href="index.html">FinDone</a> / <a href="blog.html" data-i18n="blog.crumb">Блог</a> / <span data-i18n="topic.ai">AI у фінансах</span></nav>
+  <div class="art-topic" data-i18n="topic.ai">AI у фінансах</div>
+  <h1 data-i18n-html="art.title">AI-категоризація: як FinDone <em>розуміє ваші транзакції</em></h1>
+  <p class="excerpt" data-i18n="art.excerpt">Як модель, навчена на мільйонах транзакцій, визначає, що «Сільпо» — це продукти, а P2P переказ — це обід з друзями. Розбираємо технологію зсередини.</p>
   <div class="art-meta">
     <div class="av">АС</div>
     <div>
-      <div class="nm">Анна Соловйова</div>
+      <div class="nm" data-i18n="art.author">Анна Соловйова</div>
       <div>
-        <time datetime="2026-03-08">8 березня 2026</time>
+        <time datetime="2026-03-08" data-i18n="art.date">8 березня 2026</time>
         <span class="sep"></span>
-        <span>6 хв читання</span>
+        <span data-i18n="art.read">6 хв читання</span>
       </div>
     </div>
   </div>
@@ -167,83 +167,83 @@ footer{padding:60px 0 50px;border-top:1px solid var(--line);margin-top:80px}
 
 <div class="art-layout">
   <aside class="toc">
-    <h4>Зміст</h4>
-    <a href="#s1">Проблема ручного обліку</a>
-    <a href="#s2">Як працює AI-модель</a>
-    <a href="#s3">Навчання на реальних даних</a>
-    <a href="#s4">Точність і помилки</a>
-    <a href="#s5">Приклади категоризації</a>
-    <a href="#s6">Що далі</a>
+    <h4 data-i18n="art.toc">Зміст</h4>
+    <a href="#s1" data-i18n="art.toc1">Проблема ручного обліку</a>
+    <a href="#s2" data-i18n="art.toc2">Як працює AI-модель</a>
+    <a href="#s3" data-i18n="art.toc3">Навчання на реальних даних</a>
+    <a href="#s4" data-i18n="art.toc4">Точність і помилки</a>
+    <a href="#s5" data-i18n="art.toc5">Приклади категоризації</a>
+    <a href="#s6" data-i18n="art.toc6">Що далі</a>
   </aside>
 
   <article class="art-body">
     <div class="prose">
-      <h2 id="s1">Проблема ручного обліку витрат</h2>
-      <p>Щоразу, коли ви оплачуєте каву, купуєте продукти або переказуєте гроші другу, банк записує транзакцію. Але банківська виписка — це просто набір рядків: «ТОВ АШАН РІТЕЙЛ УКРАЇНА», «P2P ПЕРЕКАЗ НА КАРТУ 5168****1234», «GLOVO 12.03». Зрозуміти, куди саме йдуть гроші, з цього — неможливо.</p>
-      <p>Більшість додатків для бюджету просять вас категоризувати кожну транзакцію вручну. Перші три дні це цікаво. Через тиждень ви забиваєте. Через місяць — видаляєте додаток.</p>
+      <h2 id="s1" data-i18n="art.h1">Проблема ручного обліку витрат</h2>
+      <p data-i18n="art.p1">Щоразу, коли ви оплачуєте каву, купуєте продукти або переказуєте гроші другу, банк записує транзакцію. Але банківська виписка — це просто набір рядків: «ТОВ АШАН РІТЕЙЛ УКРАЇНА», «P2P ПЕРЕКАЗ НА КАРТУ 5168****1234», «GLOVO 12.03». Зрозуміти, куди саме йдуть гроші, з цього — неможливо.</p>
+      <p data-i18n="art.p2">Більшість додатків для бюджету просять вас категоризувати кожну транзакцію вручну. Перші три дні це цікаво. Через тиждень ви забиваєте. Через місяць — видаляєте додаток.</p>
 
-      <blockquote>«Найкращий фінансовий трекер — той, який працює без вашої участі. Інакше він не працює взагалі.»</blockquote>
+      <blockquote data-i18n="art.quote">«Найкращий фінансовий трекер — той, який працює без вашої участі. Інакше він не працює взагалі.»</blockquote>
 
-      <h2 id="s2">Як працює AI-модель FinDone</h2>
-      <p>FinDone використовує модель машинного навчання (ML), яка аналізує текст транзакції, суму, час, MCC-код (merchant category code) та патерни витрат конкретного користувача. На виході — категорія: «Продукти», «Транспорт», «Кафе та ресторани», «Підписки» тощо.</p>
-      <p>Процес відбувається за мілісекунди після синхронізації з monobank або іншим банком. Ви відкриваєте FinDone — а категорії вже проставлені.</p>
+      <h2 id="s2" data-i18n="art.h2">Як працює AI-модель FinDone</h2>
+      <p data-i18n="art.p3">FinDone використовує модель машинного навчання (ML), яка аналізує текст транзакції, суму, час, MCC-код (merchant category code) та патерни витрат конкретного користувача. На виході — категорія: «Продукти», «Транспорт», «Кафе та ресторани», «Підписки» тощо.</p>
+      <p data-i18n="art.p4">Процес відбувається за мілісекунди після синхронізації з monobank або іншим банком. Ви відкриваєте FinDone — а категорії вже проставлені.</p>
       <ul>
-        <li><strong>Текстовий аналіз:</strong> модель розпізнає назви мерчантів навіть у скороченому вигляді (ATB, Silpo, Novus)</li>
-        <li><strong>MCC-код:</strong> кожен термінал має код категорії, який FinDone враховує як додатковий сигнал</li>
-        <li><strong>Контекст суми:</strong> 45 грн у «Сільпо» — це перекус, 1 200 грн — це тижнева закупка</li>
-        <li><strong>Часові патерни:</strong> щомісячна оплата однакової суми — швидше за все підписка</li>
+        <li data-i18n-html="art.li1"><strong>Текстовий аналіз:</strong> модель розпізнає назви мерчантів навіть у скороченому вигляді (ATB, Silpo, Novus)</li>
+        <li data-i18n-html="art.li2"><strong>MCC-код:</strong> кожен термінал має код категорії, який FinDone враховує як додатковий сигнал</li>
+        <li data-i18n-html="art.li3"><strong>Контекст суми:</strong> 45 грн у «Сільпо» — це перекус, 1 200 грн — це тижнева закупка</li>
+        <li data-i18n-html="art.li4"><strong>Часові патерни:</strong> щомісячна оплата однакової суми — швидше за все підписка</li>
       </ul>
 
-      <h2 id="s3">Навчання на реальних українських даних</h2>
-      <p>Головна перевага FinDone перед західними аналогами — модель навчена на реальних українських транзакціях. Вона знає, що «Водафон» — це зв'язок, «Укрзалізниця» — транспорт, а «Нова Пошта» може бути як доставка, так і повернення товару.</p>
-      <p>Ми використовуємо анонімізовані дані (без прив'язки до конкретних людей) для постійного покращення моделі. Чим більше користувачів — тим точніша категоризація для всіх.</p>
+      <h2 id="s3" data-i18n="art.h3">Навчання на реальних українських даних</h2>
+      <p data-i18n="art.p5">Головна перевага FinDone перед західними аналогами — модель навчена на реальних українських транзакціях. Вона знає, що «Водафон» — це зв'язок, «Укрзалізниця» — транспорт, а «Нова Пошта» може бути як доставка, так і повернення товару.</p>
+      <p data-i18n="art.p6">Ми використовуємо анонімізовані дані (без прив'язки до конкретних людей) для постійного покращення моделі. Чим більше користувачів — тим точніша категоризація для всіх.</p>
 
       <div class="callout">
         <div class="c-ic">🔒</div>
-        <div><p><strong>Приватність:</strong> FinDone не зберігає ваші банківські дані на своїх серверах. Категоризація відбувається в реальному часі, а raw-дані залишаються у вашому банку.</p></div>
+        <div><p data-i18n-html="art.tip1"><strong>Приватність:</strong> FinDone не зберігає ваші банківські дані на своїх серверах. Категоризація відбувається в реальному часі, а raw-дані залишаються у вашому банку.</p></div>
       </div>
 
-      <h2 id="s4">Точність і як FinDone обробляє помилки</h2>
-      <p>Жодна AI-модель не ідеальна. Наша точність — 94% для стандартних транзакцій і ~87% для P2P переказів (бо в них немає назви мерчанта). Але FinDone вчиться на ваших виправленнях.</p>
-      <p>Якщо ви перенесете транзакцію «P2P Олена» з категорії «Інше» в «Обід з друзями», наступного разу модель запам'ятає цей патерн. Після 5-7 виправлень FinDone починає правильно категоризувати навіть нестандартні транзакції.</p>
+      <h2 id="s4" data-i18n="art.h4">Точність і як FinDone обробляє помилки</h2>
+      <p data-i18n="art.p7">Жодна AI-модель не ідеальна. Наша точність — 94% для стандартних транзакцій і ~87% для P2P переказів (бо в них немає назви мерчанта). Але FinDone вчиться на ваших виправленнях.</p>
+      <p data-i18n="art.p8">Якщо ви перенесете транзакцію «P2P Олена» з категорії «Інше» в «Обід з друзями», наступного разу модель запам'ятає цей патерн. Після 5-7 виправлень FinDone починає правильно категоризувати навіть нестандартні транзакції.</p>
 
-      <h2 id="s5">Реальні приклади категоризації</h2>
-      <p>Ось як FinDone обробляє типові транзакції українського користувача:</p>
+      <h2 id="s5" data-i18n="art.h5">Реальні приклади категоризації</h2>
+      <p data-i18n="art.p9">Ось як FinDone обробляє типові транзакції українського користувача:</p>
       <ul>
-        <li>«ТОВ АТБ-МАРКЕТ» → <strong>Продукти</strong></li>
-        <li>«BOLT UA 2603» → <strong>Транспорт (таксі)</strong></li>
-        <li>«NETFLIX.COM» → <strong>Підписки (розваги)</strong></li>
-        <li>«P2P 5168****7890 Олена» → <strong>Перекази (особисті)</strong></li>
-        <li>«УКРЗАЛІЗНИЦЯ KVIY» → <strong>Транспорт (залізниця)</strong></li>
-        <li>«STARBUCKS KYIV» → <strong>Кафе та ресторани</strong></li>
-        <li>«КОМУНАЛКА YASNO» → <strong>Комунальні послуги</strong></li>
-        <li>«APPLE.COM/BILL» → <strong>Підписки (технології)</strong></li>
+        <li data-i18n-html="art.ex1">«ТОВ АТБ-МАРКЕТ» → <strong>Продукти</strong></li>
+        <li data-i18n-html="art.ex2">«BOLT UA 2603» → <strong>Транспорт (таксі)</strong></li>
+        <li data-i18n-html="art.ex3">«NETFLIX.COM» → <strong>Підписки (розваги)</strong></li>
+        <li data-i18n-html="art.ex4">«P2P 5168****7890 Олена» → <strong>Перекази (особисті)</strong></li>
+        <li data-i18n-html="art.ex5">«УКРЗАЛІЗНИЦЯ KVIY» → <strong>Транспорт (залізниця)</strong></li>
+        <li data-i18n-html="art.ex6">«STARBUCKS KYIV» → <strong>Кафе та ресторани</strong></li>
+        <li data-i18n-html="art.ex7">«КОМУНАЛКА YASNO» → <strong>Комунальні послуги</strong></li>
+        <li data-i18n-html="art.ex8">«APPLE.COM/BILL» → <strong>Підписки (технології)</strong></li>
       </ul>
 
-      <h2 id="s6">Що далі: предиктивні інсайти</h2>
-      <p>AI-категоризація — це фундамент. На ньому будуються всі розумні функції FinDone: тижневі звіти, аналіз трендів, виявлення зайвих підписок, прогнозування витрат до кінця місяця.</p>
-      <p>У наступних версіях FinDone зможе передбачати ваші витрати на тиждень вперед, пропонувати персоналізовані поради й автоматично виявляти аномалії — наприклад, подвійне списання або різке зростання комуналки.</p>
+      <h2 id="s6" data-i18n="art.h6">Що далі: предиктивні інсайти</h2>
+      <p data-i18n="art.p10">AI-категоризація — це фундамент. На ньому будуються всі розумні функції FinDone: тижневі звіти, аналіз трендів, виявлення зайвих підписок, прогнозування витрат до кінця місяця.</p>
+      <p data-i18n="art.p11">У наступних версіях FinDone зможе передбачати ваші витрати на тиждень вперед, пропонувати персоналізовані поради й автоматично виявляти аномалії — наприклад, подвійне списання або різке зростання комуналки.</p>
 
       <div class="callout">
         <div class="c-ic">🚀</div>
-        <div><p><strong>Спробуйте:</strong> Підключіть monobank до FinDone й подивіться, як AI автоматично розкладе ваші витрати по категоріях. Це займе 30 секунд.</p></div>
+        <div><p data-i18n-html="art.tip2"><strong>Спробуйте:</strong> Підключіть monobank до FinDone й подивіться, як AI автоматично розкладе ваші витрати по категоріях. Це займе 30 секунд.</p></div>
       </div>
 
       <hr>
-      <p>Автоматична категоризація — це не розкіш, а необхідність для сучасного бюджетування. Якщо додаток просить вас вручну вписувати кожну покупку — це додаток з 2015 року. FinDone працює за вас, щоб ви могли зосередитись на головному — жити, а не рахувати.</p>
+      <p data-i18n="art.conclusion">Автоматична категоризація — це не розкіш, а необхідність для сучасного бюджетування. Якщо додаток просить вас вручну вписувати кожну покупку — це додаток з 2015 року. FinDone працює за вас, щоб ви могли зосередитись на головному — жити, а не рахувати.</p>
     </div>
 
     <div class="author-card">
       <div class="av-lg">АС</div>
       <div>
-        <h4>Анна Соловйова</h4>
-        <p>Product Designer у FinDone. Пише про UX, AI та те, як технології спрощують фінанси.</p>
-        <a href="authors.html">Усі статті автора →</a>
+        <h4 data-i18n="art.author">Анна Соловйова</h4>
+        <p data-i18n="art.author_bio">Product Designer у FinDone. Пише про UX, AI та те, як технології спрощують фінанси.</p>
+        <a href="authors.html" data-i18n="art.author_link">Усі статті автора →</a>
       </div>
     </div>
 
     <div class="share">
-      <span>Поділитись:</span>
+      <span data-i18n="art.share">Поділитись:</span>
       <a href="#" title="Twitter">𝕏</a>
       <a href="#" title="LinkedIn">in</a>
       <a href="#" title="Telegram">✈</a>
@@ -253,48 +253,177 @@ footer{padding:60px 0 50px;border-top:1px solid var(--line);margin-top:80px}
 </div>
 
 <section class="related">
-  <h3>Читайте <em>далі.</em></h3>
+  <h3 data-i18n-html="art.related">Читайте <em>далі.</em></h3>
   <div class="related-grid">
     <a href="article-budget-15000.html" class="r-card">
-      <div class="r-topic">Бюджетування</div>
-      <h4>Як жити на 15 000 грн і не сходити з розуму</h4>
-      <p>Реалістичний бюджет на мінімальну зарплату в Україні.</p>
-      <div class="rm">Читати →</div>
+      <div class="r-topic" data-i18n="topic.budgeting">Бюджетування</div>
+      <h4 data-i18n="rel.r1_title">Як жити на 15 000 грн і не сходити з розуму</h4>
+      <p data-i18n="rel.r1_excerpt">Реалістичний бюджет на мінімальну зарплату в Україні.</p>
+      <div class="rm" data-i18n="art.read_more">Читати →</div>
     </a>
     <a href="topic.html?t=saving" class="r-card">
-      <div class="r-topic">Заощадження</div>
-      <h4>5 підписок, які ви забули скасувати</h4>
-      <p>Середній користувач знаходить ₴1,200 невидимих підписок на місяць.</p>
-      <div class="rm">Читати →</div>
+      <div class="r-topic" data-i18n="topic.saving">Заощадження</div>
+      <h4 data-i18n="rel.r2_title">5 підписок, які ви забули скасувати</h4>
+      <p data-i18n="rel.r2_excerpt">Середній користувач знаходить ₴1,200 невидимих підписок на місяць.</p>
+      <div class="rm" data-i18n="art.read_more">Читати →</div>
     </a>
     <a href="topic.html?t=product" class="r-card">
-      <div class="r-topic">Продукт</div>
-      <h4>Fin Voice: записати витрату голосом за 3 секунди</h4>
-      <p>Голосове введення операцій — українською, англійською та іспанською.</p>
-      <div class="rm">Читати →</div>
+      <div class="r-topic" data-i18n="topic.product">Продукт</div>
+      <h4 data-i18n="rel.r3_title">Fin Voice: записати витрату голосом за 3 секунди</h4>
+      <p data-i18n="rel.r3_excerpt">Голосове введення операцій — українською, англійською та іспанською.</p>
+      <div class="rm" data-i18n="art.read_more">Читати →</div>
     </a>
   </div>
 </section>
 
 <div class="art-cta">
-  <h3>Спробуйте <em>FinDone</em> безкоштовно.</h3>
-  <p>14 днів Pro. Без картки. Скасувати в 1 клік.</p>
-  <a class="btn" href="https://app.findone.xyz/auth" target="_blank">Почати безкоштовно →</a>
+  <h3 data-i18n-html="art.cta_title">Спробуйте <em>FinDone</em> безкоштовно.</h3>
+  <p data-i18n="art.cta_sub">14 днів Pro. Без картки. Скасувати в 1 клік.</p>
+  <a class="btn" href="https://app.findone.xyz/auth" target="_blank" rel="noopener" data-i18n="art.cta_btn">Почати безкоштовно →</a>
 </div>
 
 <footer>
   <div class="wrap">
     <div class="foot-bot">
-      <span>© 2026 FinDone. Зроблено з ♥ у Києві.</span>
-      <a href="blog.html">← Назад до блогу</a>
+      <span data-i18n="footer.copy">© 2026 FinDone. Зроблено з ♥ у Києві.</span>
+      <a href="blog.html" data-i18n="art.back_blog">← Назад до блогу</a>
     </div>
   </div>
 </footer>
 
 <script>
 const FLAGS={uk:'🇺🇦',en:'🇺🇸',es:'🇪🇸'},LBLS={uk:'UA',en:'EN',es:'ES'};
+const I18N={
+uk:{
+'art.meta_title':'AI-категоризація: як FinDone розуміє ваші транзакції — Блог FinDone',
+'art.meta_desc':'Як штучний інтелект FinDone автоматично розпізнає категорії витрат з monobank, ПриватБанк та інших банків. Машинне навчання для особистих фінансів.',
+'nav.home':'Головна','nav.blog_link':'Блог','nav.pricing':'Тарифи','nav.signin':'Увійти','nav.cta':'Почати',
+'blog.crumb':'Блог','topic.ai':'AI у фінансах','topic.budgeting':'Бюджетування','topic.saving':'Заощадження','topic.product':'Продукт',
+'art.title':'AI-категоризація: як FinDone <em>розуміє ваші транзакції</em>',
+'art.excerpt':'Як модель, навчена на мільйонах транзакцій, визначає, що «Сільпо» — це продукти, а P2P переказ — це обід з друзями. Розбираємо технологію зсередини.',
+'art.author':'Анна Соловйова','art.date':'8 березня 2026','art.read':'6 хв читання','art.toc':'Зміст',
+'art.toc1':'Проблема ручного обліку','art.toc2':'Як працює AI-модель','art.toc3':'Навчання на реальних даних','art.toc4':'Точність і помилки','art.toc5':'Приклади категоризації','art.toc6':'Що далі',
+'art.h1':'Проблема ручного обліку витрат','art.h2':'Як працює AI-модель FinDone','art.h3':'Навчання на реальних українських даних','art.h4':'Точність і як FinDone обробляє помилки','art.h5':'Реальні приклади категоризації','art.h6':'Що далі: предиктивні інсайти',
+'art.p1':'Щоразу, коли ви оплачуєте каву, купуєте продукти або переказуєте гроші другу, банк записує транзакцію. Але банківська виписка — це просто набір рядків: «ТОВ АШАН РІТЕЙЛ УКРАЇНА», «P2P ПЕРЕКАЗ НА КАРТУ 5168****1234», «GLOVO 12.03». Зрозуміти, куди саме йдуть гроші, з цього — неможливо.',
+'art.p2':'Більшість додатків для бюджету просять вас категоризувати кожну транзакцію вручну. Перші три дні це цікаво. Через тиждень ви забиваєте. Через місяць — видаляєте додаток.',
+'art.quote':'«Найкращий фінансовий трекер — той, який працює без вашої участі. Інакше він не працює взагалі.»',
+'art.p3':'FinDone використовує модель машинного навчання (ML), яка аналізує текст транзакції, суму, час, MCC-код (merchant category code) та патерни витрат конкретного користувача. На виході — категорія: «Продукти», «Транспорт», «Кафе та ресторани», «Підписки» тощо.',
+'art.p4':'Процес відбувається за мілісекунди після синхронізації з monobank або іншим банком. Ви відкриваєте FinDone — а категорії вже проставлені.',
+'art.li1':'<strong>Текстовий аналіз:</strong> модель розпізнає назви мерчантів навіть у скороченому вигляді (ATB, Silpo, Novus)',
+'art.li2':'<strong>MCC-код:</strong> кожен термінал має код категорії, який FinDone враховує як додатковий сигнал',
+'art.li3':'<strong>Контекст суми:</strong> 45 грн у «Сільпо» — це перекус, 1 200 грн — це тижнева закупка',
+'art.li4':'<strong>Часові патерни:</strong> щомісячна оплата однакової суми — швидше за все підписка',
+'art.p5':'Головна перевага FinDone перед західними аналогами — модель навчена на реальних українських транзакціях. Вона знає, що «Водафон» — це зв\'язок, «Укрзалізниця» — транспорт, а «Нова Пошта» може бути як доставка, так і повернення товару.',
+'art.p6':'Ми використовуємо анонімізовані дані (без прив\'язки до конкретних людей) для постійного покращення моделі. Чим більше користувачів — тим точніша категоризація для всіх.',
+'art.tip1':'<strong>Приватність:</strong> FinDone не зберігає ваші банківські дані на своїх серверах. Категоризація відбувається в реальному часі, а raw-дані залишаються у вашому банку.',
+'art.p7':'Жодна AI-модель не ідеальна. Наша точність — 94% для стандартних транзакцій і ~87% для P2P переказів (бо в них немає назви мерчанта). Але FinDone вчиться на ваших виправленнях.',
+'art.p8':'Якщо ви перенесете транзакцію «P2P Олена» з категорії «Інше» в «Обід з друзями», наступного разу модель запам\'ятає цей патерн. Після 5-7 виправлень FinDone починає правильно категоризувати навіть нестандартні транзакції.',
+'art.p9':'Ось як FinDone обробляє типові транзакції українського користувача:',
+'art.ex1':'«ТОВ АТБ-МАРКЕТ» → <strong>Продукти</strong>','art.ex2':'«BOLT UA 2603» → <strong>Транспорт (таксі)</strong>','art.ex3':'«NETFLIX.COM» → <strong>Підписки (розваги)</strong>','art.ex4':'«P2P 5168****7890 Олена» → <strong>Перекази (особисті)</strong>','art.ex5':'«УКРЗАЛІЗНИЦЯ KVIY» → <strong>Транспорт (залізниця)</strong>','art.ex6':'«STARBUCKS KYIV» → <strong>Кафе та ресторани</strong>','art.ex7':'«КОМУНАЛКА YASNO» → <strong>Комунальні послуги</strong>','art.ex8':'«APPLE.COM/BILL» → <strong>Підписки (технології)</strong>',
+'art.p10':'AI-категоризація — це фундамент. На ньому будуються всі розумні функції FinDone: тижневі звіти, аналіз трендів, виявлення зайвих підписок, прогнозування витрат до кінця місяця.',
+'art.p11':'У наступних версіях FinDone зможе передбачати ваші витрати на тиждень вперед, пропонувати персоналізовані поради й автоматично виявляти аномалії — наприклад, подвійне списання або різке зростання комуналки.',
+'art.tip2':'<strong>Спробуйте:</strong> Підключіть monobank до FinDone й подивіться, як AI автоматично розкладе ваші витрати по категоріях. Це займе 30 секунд.',
+'art.conclusion':'Автоматична категоризація — це не розкіш, а необхідність для сучасного бюджетування. Якщо додаток просить вас вручну вписувати кожну покупку — це додаток з 2015 року. FinDone працює за вас, щоб ви могли зосередитись на головному — жити, а не рахувати.',
+'art.author_bio':'Product Designer у FinDone. Пише про UX, AI та те, як технології спрощують фінанси.',
+'art.author_link':'Усі статті автора →','art.share':'Поділитись:',
+'art.related':'Читайте <em>далі.</em>','art.read_more':'Читати →',
+'rel.r1_title':'Як жити на 15 000 грн і не сходити з розуму','rel.r1_excerpt':'Реалістичний бюджет на мінімальну зарплату в Україні.',
+'rel.r2_title':'5 підписок, які ви забули скасувати','rel.r2_excerpt':'Середній користувач знаходить ₴1,200 невидимих підписок на місяць.',
+'rel.r3_title':'Fin Voice: записати витрату голосом за 3 секунди','rel.r3_excerpt':'Голосове введення операцій — українською, англійською та іспанською.',
+'art.cta_title':'Спробуйте <em>FinDone</em> безкоштовно.','art.cta_sub':'14 днів Pro. Без картки. Скасувати в 1 клік.','art.cta_btn':'Почати безкоштовно →',
+'art.back_blog':'← Назад до блогу','footer.copy':'© 2026 FinDone. Зроблено з ♥ у Києві.'
+},
+en:{
+'art.meta_title':'AI Categorization: How FinDone Understands Your Transactions — FinDone Blog',
+'art.meta_desc':'How FinDone\'s artificial intelligence automatically recognizes expense categories from monobank, PrivatBank and other banks. Machine learning for personal finance.',
+'nav.home':'Home','nav.blog_link':'Blog','nav.pricing':'Pricing','nav.signin':'Sign in','nav.cta':'Get started',
+'blog.crumb':'Blog','topic.ai':'AI in Finance','topic.budgeting':'Budgeting','topic.saving':'Savings','topic.product':'Product',
+'art.title':'AI Categorization: How FinDone <em>Understands Your Transactions</em>',
+'art.excerpt':'How a model trained on millions of transactions determines that "Silpo" means groceries and a P2P transfer means lunch with friends. We break down the technology from the inside.',
+'art.author':'Anna Soloviova','art.date':'March 8, 2026','art.read':'6 min read','art.toc':'Contents',
+'art.toc1':'The Manual Tracking Problem','art.toc2':'How the AI Model Works','art.toc3':'Training on Real Data','art.toc4':'Accuracy & Errors','art.toc5':'Categorization Examples','art.toc6':'What\'s Next',
+'art.h1':'The Problem with Manual Expense Tracking','art.h2':'How FinDone\'s AI Model Works','art.h3':'Training on Real Ukrainian Data','art.h4':'Accuracy and How FinDone Handles Errors','art.h5':'Real Categorization Examples','art.h6':'What\'s Next: Predictive Insights',
+'art.p1':'Every time you pay for coffee, buy groceries, or send money to a friend, your bank records a transaction. But a bank statement is just a set of strings: "AUCHAN RETAIL UKRAINE LLC", "P2P TRANSFER TO CARD 5168****1234", "GLOVO 12.03". Understanding exactly where your money goes from this — is impossible.',
+'art.p2':'Most budget apps ask you to manually categorize every transaction. The first three days it\'s fun. After a week you stop. After a month — you delete the app.',
+'art.quote':'"The best financial tracker is the one that works without your involvement. Otherwise it doesn\'t work at all."',
+'art.p3':'FinDone uses a machine learning (ML) model that analyzes the transaction text, amount, time, MCC code (merchant category code) and spending patterns of a specific user. The output is a category: "Groceries", "Transport", "Cafes & Restaurants", "Subscriptions" and so on.',
+'art.p4':'The process happens in milliseconds after syncing with monobank or another bank. You open FinDone — and the categories are already assigned.',
+'art.li1':'<strong>Text analysis:</strong> the model recognizes merchant names even in abbreviated form (ATB, Silpo, Novus)',
+'art.li2':'<strong>MCC code:</strong> each terminal has a category code that FinDone uses as an additional signal',
+'art.li3':'<strong>Amount context:</strong> ₴45 at Silpo is a snack, ₴1,200 is a weekly grocery run',
+'art.li4':'<strong>Time patterns:</strong> a monthly payment of the same amount is most likely a subscription',
+'art.p5':'FinDone\'s main advantage over Western alternatives — the model is trained on real Ukrainian transactions. It knows that "Vodafone" is telecom, "Ukrzaliznytsia" is transport, and "Nova Poshta" can be either delivery or a return.',
+'art.p6':'We use anonymized data (not linked to specific individuals) to continuously improve the model. The more users — the more accurate categorization for everyone.',
+'art.tip1':'<strong>Privacy:</strong> FinDone does not store your banking data on its servers. Categorization happens in real time, and raw data stays with your bank.',
+'art.p7':'No AI model is perfect. Our accuracy is 94% for standard transactions and ~87% for P2P transfers (because they lack a merchant name). But FinDone learns from your corrections.',
+'art.p8':'If you move the "P2P Olena" transaction from "Other" to "Lunch with friends", the model will remember this pattern next time. After 5-7 corrections FinDone starts correctly categorizing even non-standard transactions.',
+'art.p9':'Here\'s how FinDone handles typical Ukrainian user transactions:',
+'art.ex1':'"ATB-MARKET LLC" → <strong>Groceries</strong>','art.ex2':'"BOLT UA 2603" → <strong>Transport (taxi)</strong>','art.ex3':'"NETFLIX.COM" → <strong>Subscriptions (entertainment)</strong>','art.ex4':'"P2P 5168****7890 Olena" → <strong>Transfers (personal)</strong>','art.ex5':'"UKRZALIZNYTSIA KVIY" → <strong>Transport (rail)</strong>','art.ex6':'"STARBUCKS KYIV" → <strong>Cafes & Restaurants</strong>','art.ex7':'"UTILITIES YASNO" → <strong>Utilities</strong>','art.ex8':'"APPLE.COM/BILL" → <strong>Subscriptions (tech)</strong>',
+'art.p10':'AI categorization is the foundation. All of FinDone\'s smart features are built on it: weekly reports, trend analysis, detecting unused subscriptions, forecasting spending until end of month.',
+'art.p11':'In future versions FinDone will be able to predict your spending a week ahead, offer personalized advice and automatically detect anomalies — for example, double charges or a sudden spike in utilities.',
+'art.tip2':'<strong>Try it:</strong> Connect monobank to FinDone and watch how AI automatically sorts your expenses into categories. It takes 30 seconds.',
+'art.conclusion':'Automatic categorization is not a luxury, but a necessity for modern budgeting. If an app asks you to manually enter every purchase — it\'s a 2015 app. FinDone works for you so you can focus on what matters — living, not counting.',
+'art.author_bio':'Product Designer at FinDone. Writes about UX, AI and how technology simplifies finance.',
+'art.author_link':'All articles by this author →','art.share':'Share:',
+'art.related':'Read <em>more.</em>','art.read_more':'Read →',
+'rel.r1_title':'How to Live on ₴15,000 and Not Lose Your Mind','rel.r1_excerpt':'A realistic budget on minimum wage in Ukraine.',
+'rel.r2_title':'5 Subscriptions You Forgot to Cancel','rel.r2_excerpt':'The average user finds ₴1,200 of invisible subscriptions per month.',
+'rel.r3_title':'Fin Voice: Log an Expense by Voice in 3 Seconds','rel.r3_excerpt':'Voice entry of transactions — in Ukrainian, English and Spanish.',
+'art.cta_title':'Try <em>FinDone</em> for free.','art.cta_sub':'14 days Pro. No card. Cancel in 1 click.','art.cta_btn':'Start for free →',
+'art.back_blog':'← Back to blog','footer.copy':'© 2026 FinDone. Made with ♥ in Kyiv.'
+},
+es:{
+'art.meta_title':'Categorización IA: cómo FinDone entiende tus transacciones — Blog FinDone',
+'art.meta_desc':'Cómo la inteligencia artificial de FinDone reconoce automáticamente las categorías de gastos de monobank, PrivatBank y otros bancos. Aprendizaje automático para las finanzas personales.',
+'nav.home':'Inicio','nav.blog_link':'Blog','nav.pricing':'Precios','nav.signin':'Entrar','nav.cta':'Comenzar',
+'blog.crumb':'Blog','topic.ai':'IA en Finanzas','topic.budgeting':'Presupuesto','topic.saving':'Ahorros','topic.product':'Producto',
+'art.title':'Categorización IA: cómo FinDone <em>entiende tus transacciones</em>',
+'art.excerpt':'Cómo un modelo entrenado con millones de transacciones determina que «Silpo» son alimentos y una transferencia P2P es un almuerzo con amigos. Analizamos la tecnología por dentro.',
+'art.author':'Anna Soloviova','art.date':'8 de marzo de 2026','art.read':'6 min de lectura','art.toc':'Contenido',
+'art.toc1':'El problema del registro manual','art.toc2':'Cómo funciona el modelo IA','art.toc3':'Entrenamiento con datos reales','art.toc4':'Precisión y errores','art.toc5':'Ejemplos de categorización','art.toc6':'Qué sigue',
+'art.h1':'El problema del registro manual de gastos','art.h2':'Cómo funciona el modelo IA de FinDone','art.h3':'Entrenamiento con datos ucranianos reales','art.h4':'Precisión y cómo FinDone gestiona errores','art.h5':'Ejemplos reales de categorización','art.h6':'Qué sigue: perspectivas predictivas',
+'art.p1':'Cada vez que pagas un café, compras productos o envías dinero a un amigo, el banco registra la transacción. Pero un extracto bancario es solo un conjunto de cadenas: «ATB-MARKET LLC», «TRANSFERENCIA P2P A TARJETA 5168****1234», «GLOVO 12.03». Entender exactamente adónde va el dinero de esto — es imposible.',
+'art.p2':'La mayoría de las aplicaciones de presupuesto te piden que categorices cada transacción manualmente. Los primeros tres días es interesante. Después de una semana lo abandonas. Después de un mes — eliminas la app.',
+'art.quote':'«El mejor rastreador financiero es el que funciona sin tu participación. De lo contrario no funciona en absoluto.»',
+'art.p3':'FinDone usa un modelo de aprendizaje automático (ML) que analiza el texto de la transacción, el monto, la hora, el código MCC (merchant category code) y los patrones de gasto del usuario específico. El resultado es una categoría: «Alimentos», «Transporte», «Cafés y restaurantes», «Suscripciones», etc.',
+'art.p4':'El proceso ocurre en milisegundos después de sincronizarse con monobank u otro banco. Abres FinDone — y las categorías ya están asignadas.',
+'art.li1':'<strong>Análisis de texto:</strong> el modelo reconoce nombres de comerciantes incluso en forma abreviada (ATB, Silpo, Novus)',
+'art.li2':'<strong>Código MCC:</strong> cada terminal tiene un código de categoría que FinDone usa como señal adicional',
+'art.li3':'<strong>Contexto del monto:</strong> ₴45 en Silpo es un snack, ₴1.200 es la compra semanal',
+'art.li4':'<strong>Patrones temporales:</strong> un pago mensual del mismo monto probablemente es una suscripción',
+'art.p5':'La principal ventaja de FinDone frente a los competidores occidentales — el modelo está entrenado con transacciones ucranianas reales. Sabe que «Vodafone» es telecomunicaciones, «Ukrzaliznytsia» es transporte, y «Nova Poshta» puede ser entrega o devolución.',
+'art.p6':'Usamos datos anonimizados (sin vinculación a personas específicas) para mejorar continuamente el modelo. Más usuarios significa categorización más precisa para todos.',
+'art.tip1':'<strong>Privacidad:</strong> FinDone no almacena tus datos bancarios en sus servidores. La categorización ocurre en tiempo real y los datos sin procesar se quedan en tu banco.',
+'art.p7':'Ningún modelo de IA es perfecto. Nuestra precisión es del 94% para transacciones estándar y ~87% para transferencias P2P (porque no tienen nombre de comerciante). Pero FinDone aprende de tus correcciones.',
+'art.p8':'Si mueves la transacción «P2P Olena» de «Otros» a «Almuerzo con amigos», el modelo recordará este patrón la próxima vez. Después de 5-7 correcciones FinDone comienza a categorizar correctamente incluso transacciones no estándar.',
+'art.p9':'Así es como FinDone procesa las transacciones típicas de un usuario ucraniano:',
+'art.ex1':'«ATB-MARKET LLC» → <strong>Alimentos</strong>','art.ex2':'«BOLT UA 2603» → <strong>Transporte (taxi)</strong>','art.ex3':'«NETFLIX.COM» → <strong>Suscripciones (entretenimiento)</strong>','art.ex4':'«P2P 5168****7890 Olena» → <strong>Transferencias (personales)</strong>','art.ex5':'«UKRZALIZNYTSIA KVIY» → <strong>Transporte (ferroviario)</strong>','art.ex6':'«STARBUCKS KYIV» → <strong>Cafés y restaurantes</strong>','art.ex7':'«SERVICIOS YASNO» → <strong>Servicios públicos</strong>','art.ex8':'«APPLE.COM/BILL» → <strong>Suscripciones (tecnología)</strong>',
+'art.p10':'La categorización IA es el fundamento. Todas las funciones inteligentes de FinDone se construyen sobre él: informes semanales, análisis de tendencias, detección de suscripciones innecesarias, previsión de gastos hasta fin de mes.',
+'art.p11':'En futuras versiones FinDone podrá predecir tus gastos con una semana de antelación, ofrecer consejos personalizados y detectar automáticamente anomalías — por ejemplo, cargos dobles o un aumento repentino en los servicios.',
+'art.tip2':'<strong>Pruébalo:</strong> Conecta monobank a FinDone y observa cómo la IA ordena automáticamente tus gastos en categorías. Toma 30 segundos.',
+'art.conclusion':'La categorización automática no es un lujo, sino una necesidad para el presupuesto moderno. Si una app te pide ingresar manualmente cada compra — es una app de 2015. FinDone trabaja por ti para que puedas centrarte en lo importante — vivir, no contar.',
+'art.author_bio':'Product Designer en FinDone. Escribe sobre UX, IA y cómo la tecnología simplifica las finanzas.',
+'art.author_link':'Todos los artículos del autor →','art.share':'Compartir:',
+'art.related':'Leer <em>más.</em>','art.read_more':'Leer →',
+'rel.r1_title':'Cómo vivir con ₴15.000 y no volverse loco','rel.r1_excerpt':'Un presupuesto realista con el salario mínimo en Ucrania.',
+'rel.r2_title':'5 suscripciones que olvidaste cancelar','rel.r2_excerpt':'El usuario promedio encuentra ₴1.200 en suscripciones invisibles al mes.',
+'rel.r3_title':'Fin Voice: registra un gasto por voz en 3 segundos','rel.r3_excerpt':'Entrada de operaciones por voz — en ucraniano, inglés y español.',
+'art.cta_title':'Prueba <em>FinDone</em> gratis.','art.cta_sub':'14 días Pro. Sin tarjeta. Cancela con 1 clic.','art.cta_btn':'Comenzar gratis →',
+'art.back_blog':'← Volver al blog','footer.copy':'© 2026 FinDone. Hecho con ♥ en Kiev.'
+}
+};
 function getLang(){const u=new URLSearchParams(location.search).get('lang');if(u)return u;const s=localStorage.getItem('findone_lang');return s||'uk'}
-function applyLang(l){document.documentElement.lang=l;const c=document.getElementById('langCurrent');if(c)c.textContent=FLAGS[l]||FLAGS.uk;const lb=document.querySelector('#langSw button .lbl');if(lb)lb.textContent=LBLS[l]||LBLS.uk;document.querySelectorAll('[data-lang-btn]').forEach(b=>b.classList.toggle('active',b.getAttribute('data-lang-btn')===l));localStorage.setItem('findone_lang',l)}
+function applyLang(l){
+  document.documentElement.lang=l;
+  const c=document.getElementById('langCurrent');if(c)c.textContent=FLAGS[l]||FLAGS.uk;
+  const lb=document.querySelector('#langSw button .lbl');if(lb)lb.textContent=LBLS[l]||LBLS.uk;
+  document.querySelectorAll('[data-lang-btn]').forEach(b=>b.classList.toggle('active',b.getAttribute('data-lang-btn')===l));
+  const dict=I18N[l]||I18N.uk;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(dict[k]!==undefined)el.textContent=dict[k]});
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{const k=el.getAttribute('data-i18n-html');if(dict[k]!==undefined)el.innerHTML=dict[k]});
+  document.querySelectorAll('[data-i18n-attr]').forEach(el=>{const k=el.getAttribute('data-i18n');const a=el.getAttribute('data-i18n-attr');if(dict[k]!==undefined&&a)el.setAttribute(a,dict[k])});
+  localStorage.setItem('findone_lang',l);
+}
 function setLang(l){applyLang(l);document.getElementById('langSw').classList.remove('open')}
 function toggleLang(e){e.stopPropagation();document.getElementById('langSw').classList.toggle('open')}
 document.addEventListener('click',e=>{const s=document.getElementById('langSw');if(s&&!s.contains(e.target))s.classList.remove('open')});
