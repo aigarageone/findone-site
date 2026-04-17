@@ -10,8 +10,8 @@
 <meta name="author" content="FinDone">
 <link rel="canonical" href="https://findone.xyz/">
 <link rel="alternate" hreflang="uk" href="https://findone.xyz/">
-<link rel="alternate" hreflang="en" href="https://findone.xyz/?lang=en">
-<link rel="alternate" hreflang="es" href="https://findone.xyz/?lang=es">
+<link rel="alternate" hreflang="en" href="https://findone.xyz/en/">
+<link rel="alternate" hreflang="es" href="https://findone.xyz/es/">
 <link rel="alternate" hreflang="x-default" href="https://findone.xyz/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FinDone">
@@ -526,15 +526,34 @@ footer{padding:60px 0 50px;border-top:1px solid var(--line)}
       <a href="#features">Можливості</a>
       <a href="#how">Як це працює</a>
       <a href="#pricing">Тарифи</a>
-      <a href="blog.html">Блог</a>
+      <a href="/blog/">Блог</a>
       <a href="#faq">FAQ</a>
     </div>
     <div class="nav-cta">
+      <div class="lang-sw" id="langSw" style="position:relative">
+        <button onclick="toggleLang(event)" style="display:inline-flex;align-items:center;gap:6px;padding:9px 12px;border-radius:999px;font-size:13px;color:var(--ink-2);background:transparent"><span>🇺🇦</span><span>UA</span><svg viewBox="0 0 12 12" width="11" height="11" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+        <div class="menu" style="position:absolute;top:calc(100% + 8px);right:0;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px;min-width:140px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:.2s;z-index:60">
+          <button onclick="setLang('uk')" style="width:100%;display:flex;padding:9px 12px;border-radius:10px;font-size:13.5px;background:var(--mint-2);color:var(--mint);font-weight:600"><span style="font-size:15px;margin-right:6px">🇺🇦</span>Українська</button>
+          <button onclick="setLang('en')" style="width:100%;display:flex;padding:9px 12px;border-radius:10px;font-size:13.5px"><span style="font-size:15px;margin-right:6px">🇺🇸</span>English</button>
+          <button onclick="setLang('es')" style="width:100%;display:flex;padding:9px 12px;border-radius:10px;font-size:13.5px"><span style="font-size:15px;margin-right:6px">🇪🇸</span>Español</button>
+        </div>
+      </div>
       <a class="btn btn-ghost" href="https://app.findone.xyz/auth" target="_blank" rel="noopener">Увійти</a>
       <a class="btn btn-primary" href="https://app.findone.xyz/auth" target="_blank" rel="noopener">Почати безкоштовно <span class="arrow">→</span></a>
     </div>
   </div>
 </nav>
+<style>
+.lang-sw.open .menu{opacity:1 !important;visibility:visible !important;transform:none !important}
+.lang-sw button svg{transition:.2s}.lang-sw.open > button svg{transform:rotate(180deg)}
+</style>
+<script>
+const LANG_URLS={uk:'/',en:'/en/',es:'/es/'};
+const PAGE_LANG='uk';
+function setLang(l){if(l===PAGE_LANG){document.getElementById('langSw').classList.remove('open');return}if(LANG_URLS[l])window.location.href=LANG_URLS[l]}
+function toggleLang(e){e.stopPropagation();document.getElementById('langSw').classList.toggle('open')}
+document.addEventListener('click',e=>{const s=document.getElementById('langSw');if(s&&!s.contains(e.target))s.classList.remove('open')});
+</script>
 
 <header class="hero">
   <div class="wrap hero-grid">
@@ -859,7 +878,7 @@ footer{padding:60px 0 50px;border-top:1px solid var(--line)}
       </div>
       <div>
         <h5>Компанія</h5>
-        <a href="#">Про нас</a><a href="blog.html">Блог</a><a href="authors.html">Автори</a><a href="#">Кар'єра</a>
+        <a href="#">Про нас</a><a href="/blog/">Блог</a><a href="/blog/avtory/">Автори</a><a href="#">Кар'єра</a>
       </div>
       <div>
         <h5>Правове</h5>

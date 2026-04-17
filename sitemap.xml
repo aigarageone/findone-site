@@ -1,99 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-    <loc>https://findone.xyz/</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/blog"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/blog?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/blog?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/blog"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/authors</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/authors"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/authors?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/authors?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/authors"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/budget-15000</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/blog/budget-15000"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/blog/budget-15000?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/blog/budget-15000?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/blog/budget-15000"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/ai-categorization</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/blog/ai-categorization"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/blog/ai-categorization?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/blog/ai-categorization?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/blog/ai-categorization"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/topic/budgeting</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://findone.xyz/blog/topic/budgeting"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://findone.xyz/blog/topic/budgeting?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://findone.xyz/blog/topic/budgeting?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://findone.xyz/blog/topic/budgeting"/>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/topic/ai</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/topic/saving</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/topic/product</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://findone.xyz/blog/topic/stories</loc>
-    <lastmod>2026-03-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://findone.xyz/sitemap-uk.xml</loc>
+    <lastmod>2026-04-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://findone.xyz/sitemap-en.xml</loc>
+    <lastmod>2026-04-17</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://findone.xyz/sitemap-es.xml</loc>
+    <lastmod>2026-04-17</lastmod>
+  </sitemap>
+</sitemapindex>

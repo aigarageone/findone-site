@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Legacy query parameters should not be indexed
+Disallow: /*?lang=
+Disallow: /topic.html
+
 Sitemap: https://findone.xyz/sitemap.xml

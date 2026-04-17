@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title data-i18n="blog.meta_title">Блог FinDone — Поради, інсайти та гайди з особистих фінансів</title>
+<meta name="description" data-i18n-attr="content" data-i18n="blog.meta_desc" content="Практичні статті про ведення бюджету, AI у фінансах, поради щодо економії та огляди можливостей FinDone.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="keywords" content="особисті фінанси, бюджет, FinDone, AI у фінансах, monobank, ведення бюджету, заощадження, фінансова грамотність">
+<link rel="canonical" href="https://findone.xyz/blog/">
+<link rel="alternate" hreflang="uk" href="https://findone.xyz/blog/">
+<link rel="alternate" hreflang="en" href="https://findone.xyz/en/blog/">
+<link rel="alternate" hreflang="es" href="https://findone.xyz/es/blog/">
+<link rel="alternate" hreflang="x-default" href="https://findone.xyz/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FinDone">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:url" content="https://findone.xyz/blog/">
+<meta property="og:title" data-i18n-attr="content" data-i18n="blog.meta_title" content="Блог FinDone">
+<meta property="og:description" data-i18n-attr="content" data-i18n="blog.meta_desc" content="Практичні статті про фінанси.">
+<meta property="og:image" content="https://findone.xyz/og-blog.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@findone_xyz">
+<meta name="twitter:title" data-i18n-attr="content" data-i18n="blog.meta_title" content="Блог FinDone">
+<meta name="twitter:description" data-i18n-attr="content" data-i18n="blog.meta_desc" content="">
+<meta name="twitter:image" content="https://findone.xyz/og-blog.png">
+<meta name="theme-color" content="#00A3E1">
+<meta name="author" content="FinDone">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"FinDone Blog","url":"https://findone.xyz/blog/","inLanguage":["uk","en","es"],"description":"Personal finance tips, AI insights, and guides from FinDone","publisher":{"@type":"Organization","name":"FinDone","url":"https://findone.xyz/","logo":{"@type":"ImageObject","url":"https://findone.xyz/logo.png"}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"FinDone","item":"https://findone.xyz/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://findone.xyz/blog/"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","itemListOrder":"https://schema.org/ItemListOrderDescending","numberOfItems":2,"itemListElement":[
+{"@type":"ListItem","position":1,"url":"https://findone.xyz/blog/yak-zhyty-na-15000-grn/","name":"Як жити на 15 000 грн і не сходити з розуму"},
+{"@type":"ListItem","position":2,"url":"https://findone.xyz/blog/ai-katehoryzatsiya/","name":"AI-категоризація: як FinDone розуміє ваші транзакції"}
+]}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HD2NT7CER"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-4HD2NT7CER');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBFAF7;--bg-2:#F3EFE7;--ink:#0C0B0A;--ink-2:#2A2824;--muted:#6B6760;
+  --line:#E7E2D7;--card:#FFFFFF;--mint:#00A3E1;--mint-2:#D6EFFB;
+  --peach:#FF8E5B;--peach-2:#FFE6D4;--lilac:#8B7CF6;--lilac-2:#ECE7FE;--sand:#E9DFC7;
+  --radius:22px;
+  --shadow-sm:0 1px 2px rgba(12,11,10,.04),0 2px 6px rgba(12,11,10,.04);
+  --shadow:0 1px 2px rgba(12,11,10,.04),0 20px 50px -20px rgba(12,11,10,.15);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink);font-family:'Geist',system-ui,sans-serif;font-feature-settings:"ss01","cv11";-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none}
+img,svg{display:block;max-width:100%}
+.serif{font-family:'Instrument Serif',serif;font-weight:400}
+.mono{font-family:'Geist Mono',monospace}
+
+.bg-atmos{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg-atmos::before{content:"";position:absolute;inset:-10%;background:
+  radial-gradient(900px 600px at 12% 8%, #D9EFFB 0%, transparent 55%),
+  radial-gradient(800px 500px at 92% 18%, #FFE6D4 0%, transparent 60%);filter:blur(10px) saturate(1.05)}
+.bg-atmos::after{content:"";position:absolute;inset:0;background-image:
+  radial-gradient(rgba(12,11,10,.055) 1px, transparent 1px);background-size:22px 22px;
+  mask-image:radial-gradient(ellipse at center,black 40%,transparent 80%)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.35;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+/* NAV */
+nav.top{position:sticky;top:18px;z-index:50;padding:0 20px}
+.nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+  padding:10px 14px 10px 20px;border-radius:999px;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(18px) saturate(1.4);
+  -webkit-backdrop-filter:blur(18px) saturate(1.4);
+  border:1px solid rgba(231,226,215,.9);box-shadow:var(--shadow-sm)}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;letter-spacing:-.02em;font-weight:600}
+.logo-mark{width:30px;height:30px;border-radius:9px;background:
+  conic-gradient(from 200deg at 50% 50%, #00A3E1, #6CD0F4, #FFB788, #8B7CF6, #00A3E1);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.5),0 6px 18px -6px rgba(0,163,225,.5);position:relative}
+.logo-mark::after{content:"";position:absolute;inset:5px;border-radius:5px;background:var(--bg);box-shadow:inset 0 0 0 1px rgba(12,11,10,.08)}
+.logo-mark::before{content:"";position:absolute;inset:10px;border-radius:2px;background:var(--ink);z-index:2}
+.nav-links{display:flex;gap:6px;align-items:center}
+.nav-links a{padding:9px 14px;border-radius:999px;font-size:14.5px;color:var(--ink-2);transition:.2s}
+.nav-links a:hover{background:rgba(12,11,10,.05);color:var(--ink)}
+.nav-links a.active{background:var(--mint-2);color:var(--mint);font-weight:500}
+.nav-cta{display:flex;gap:8px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:999px;font-size:14.5px;font-weight:500;transition:.2s;white-space:nowrap}
+.btn-ghost{color:var(--ink-2)}.btn-ghost:hover{color:var(--ink)}
+.btn-primary{background:var(--ink);color:#F6F2E8;position:relative;overflow:hidden}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 30px -10px rgba(0,163,225,.55),0 10px 30px -10px rgba(12,11,10,.5)}
+.btn-primary::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 20%,rgba(255,255,255,.22) 45%,rgba(0,163,225,.3) 50%,rgba(255,255,255,.22) 55%,transparent 80%);background-size:250% 100%;background-position:200% 0;pointer-events:none;z-index:1;animation:shine 3.8s ease-in-out infinite}
+@keyframes shine{0%{background-position:200% 0}55%{background-position:-100% 0}100%{background-position:-100% 0}}
+.btn-outline{border:1px solid var(--line);background:#fff;color:var(--ink)}.btn-outline:hover{border-color:var(--ink)}
+
+/* Lang switcher */
+.lang-sw{position:relative;display:inline-flex}
+.lang-sw button{display:inline-flex;align-items:center;gap:6px;padding:9px 12px;border-radius:999px;font-size:13px;color:var(--ink-2);font-weight:500;background:transparent;transition:.2s}
+.lang-sw button:hover{background:rgba(12,11,10,.05);color:var(--ink)}
+.lang-sw button svg{width:11px;height:11px;transition:.2s}
+.lang-sw.open button svg{transform:rotate(180deg)}
+.lang-sw .menu{position:absolute;top:calc(100% + 8px);right:0;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:6px;min-width:140px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:.2s;z-index:60}
+.lang-sw.open .menu{opacity:1;visibility:visible;transform:none}
+.lang-sw .menu button{width:100%;justify-content:flex-start;padding:9px 12px;border-radius:10px;font-size:13.5px}
+.lang-sw .menu button.active{background:var(--mint-2);color:var(--mint);font-weight:600}
+.lang-sw .menu button .flag{font-size:15px;margin-right:6px}
+
+/* BLOG HERO */
+.blog-hero{padding:80px 0 60px;text-align:center}
+.blog-hero .crumb{font-family:'Geist Mono',monospace;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.14em;margin-bottom:16px;display:inline-flex;gap:8px;align-items:center}
+.blog-hero .crumb a{color:var(--mint)}
+.blog-hero h1{font-family:'Instrument Serif',serif;font-size:clamp(52px,6.5vw,92px);line-height:.96;letter-spacing:-.025em;font-weight:400}
+.blog-hero h1 em{font-style:italic;color:var(--mint)}
+.blog-hero p{margin-top:18px;color:var(--muted);font-size:18px;max-width:54ch;margin-left:auto;margin-right:auto;line-height:1.55}
+
+/* TOPIC PILLS */
+.topic-bar{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+.topic-pill{padding:9px 18px;border-radius:999px;font-size:13.5px;color:var(--ink-2);background:#fff;border:1px solid var(--line);transition:.2s;cursor:pointer}
+.topic-pill:hover{border-color:var(--ink);color:var(--ink)}
+.topic-pill.active{background:var(--ink);color:#F6F2E8;border-color:var(--ink)}
+
+/* FEATURED POST */
+.featured{margin-top:56px;display:grid;grid-template-columns:1.15fr .85fr;border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);transition:.3s}
+.featured:hover{transform:translateY(-4px);box-shadow:0 30px 60px -20px rgba(12,11,10,.2)}
+.featured-img{position:relative;min-height:420px;overflow:hidden;background:linear-gradient(135deg,var(--mint-2),var(--bg-2))}
+.featured-img .thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s}
+.featured:hover .thumb{transform:scale(1.03)}
+.featured-img .badge{position:absolute;top:20px;left:20px;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;background:var(--ink);color:#F6F2E8;backdrop-filter:blur(10px)}
+.featured-body{padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.featured-topic{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);display:inline-flex;align-items:center;gap:8px}
+.featured-topic::before{content:"";width:16px;height:1px;background:var(--mint)}
+.featured h2{font-family:'Instrument Serif',serif;font-size:36px;line-height:1.1;letter-spacing:-.015em;font-weight:400;margin-top:14px}
+.featured h2 em{font-style:italic;color:var(--muted)}
+.featured .excerpt{margin-top:16px;color:var(--muted);font-size:15.5px;line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.featured-meta{margin-top:auto;padding-top:24px;display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
+.featured-meta .av{width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg,var(--mint-2),var(--mint));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:12px;flex:none}
+.featured-meta .nm{color:var(--ink);font-weight:500}
+.featured-meta .sep{width:3px;height:3px;border-radius:999px;background:var(--line)}
+
+/* POSTS GRID */
+.posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.post-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.post-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#DDD5C2}
+.post-card .img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg-2)}
+.post-card .img .thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.post-card:hover .img .thumb{transform:scale(1.04)}
+.post-card .img .topic-tag{position:absolute;bottom:12px;left:12px;padding:5px 12px;border-radius:999px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);color:var(--ink-2)}
+.post-card .body{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column}
+.post-card h3{font-family:'Instrument Serif',serif;font-size:24px;line-height:1.15;letter-spacing:-.01em;font-weight:400;margin-bottom:10px}
+.post-card .excerpt{color:var(--muted);font-size:14px;line-height:1.55;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.post-card .card-meta{display:flex;align-items:center;gap:8px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.post-card .card-meta .av{width:26px;height:26px;border-radius:999px;background:linear-gradient(135deg,var(--peach-2),var(--peach));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:9px;flex:none}
+.post-card .card-meta .nm{color:var(--ink);font-weight:500}
+.post-card .card-meta .sep{width:3px;height:3px;border-radius:999px;background:var(--line)}
+
+/* LOAD MORE */
+.load-more{display:flex;justify-content:center;margin-top:48px}
+
+/* NEWSLETTER */
+.newsletter{margin:80px 0 0;padding:56px;border-radius:28px;background:linear-gradient(135deg,#0C0B0A 0%,#1A1815 50%,#0C0B0A 100%);position:relative;color:#F6F2E8;overflow:hidden;text-align:center}
+.newsletter::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(500px 250px at 20% 0%,rgba(0,163,225,.22),transparent 60%),
+  radial-gradient(500px 250px at 80% 100%,rgba(139,124,246,.15),transparent 60%);pointer-events:none}
+.newsletter::after{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:40px 40px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);pointer-events:none}
+.newsletter>*{position:relative;z-index:2}
+.newsletter h2{font-family:'Instrument Serif',serif;font-size:clamp(32px,4vw,48px);font-weight:400;letter-spacing:-.015em}
+.newsletter h2 em{font-style:italic;color:#6CD0F4}
+.newsletter p{margin-top:14px;color:rgba(246,242,232,.65);font-size:16px;max-width:48ch;margin-left:auto;margin-right:auto;line-height:1.5}
+.nl-form{display:flex;gap:10px;max-width:460px;margin:28px auto 0;justify-content:center}
+.nl-form input{flex:1;padding:14px 20px;border-radius:999px;border:1px solid rgba(246,242,232,.2);background:rgba(246,242,232,.08);color:#F6F2E8;font-size:15px;font-family:inherit;outline:none;transition:.2s;min-width:0}
+.nl-form input::placeholder{color:rgba(246,242,232,.4)}
+.nl-form input:focus{border-color:rgba(0,163,225,.6);background:rgba(246,242,232,.12)}
+.nl-form .btn-primary{background:#F6F2E8;color:#0C0B0A;flex:none}
+
+/* FOOTER */
+footer{padding:60px 0 50px;border-top:1px solid var(--line);margin-top:80px}
+.foot{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px}
+.foot h5{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px;font-weight:500}
+.foot a{display:block;padding:6px 0;font-size:14px;color:var(--ink-2)}.foot a:hover{color:var(--mint)}
+.foot .blurb{color:var(--muted);font-size:14px;line-height:1.6;max-width:36ch;margin-top:14px}
+.foot-bot{margin-top:50px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:13px;flex-wrap:wrap;gap:12px}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+
+/* Responsive */
+@media (max-width:960px){
+  .featured{grid-template-columns:1fr}
+  .featured-img{min-height:280px}
+  .featured-body{padding:30px 28px}
+  .posts-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:680px){
+  .wrap{padding:0 20px}
+  nav.top{top:12px;padding:0 12px}
+  .nav-inner{padding:8px 8px 8px 16px}
+  .nav-links{display:none}
+  .blog-hero{padding:50px 0 40px}
+  .blog-hero h1{font-size:clamp(40px,10vw,56px)}
+  .posts-grid{grid-template-columns:1fr;gap:18px}
+  .featured h2{font-size:28px}
+  .newsletter{padding:40px 24px;border-radius:22px}
+  .nl-form{flex-direction:column}
+  .nl-form .btn-primary{width:100%;justify-content:center}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:540px){.nav-cta .btn-ghost{display:none}}
+</style>
+</head>
+<body>
+<div class="bg-atmos"></div>
+<div class="grain"></div>
+
+<nav class="top">
+  <div class="nav-inner">
+    <a class="logo" href="/"><span class="logo-mark"></span>FinDone</a>
+    <div class="nav-links">
+      <a href="/" data-i18n="nav.home">Головна</a>
+      <a href="/blog/" class="active" data-i18n="nav.blog_link">Блог</a>
+      <a href="/#pricing" data-i18n="nav.pricing">Тарифи</a>
+      <a href="/#faq" data-i18n="nav.faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <div class="lang-sw" id="langSw">
+        <button onclick="toggleLang(event)"><span id="langCurrent">🇺🇦</span><span class="lbl">UA</span><svg viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="menu">
+          <button onclick="setLang('uk')" data-lang-btn="uk"><span class="flag">🇺🇦</span>Українська</button>
+          <button onclick="setLang('en')" data-lang-btn="en"><span class="flag">🇺🇸</span>English</button>
+          <button onclick="setLang('es')" data-lang-btn="es"><span class="flag">🇪🇸</span>Español</button>
+        </div>
+      </div>
+      <a class="btn btn-ghost" href="https://app.findone.xyz/auth" target="_blank" rel="noopener" data-i18n="nav.signin">Увійти</a>
+      <a class="btn btn-primary" href="https://app.findone.xyz/auth" target="_blank" rel="noopener"><span data-i18n="nav.cta">Почати</span> →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="blog-hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="breadcrumb"><a href="/">FinDone</a> / <span data-i18n="blog.crumb">Блог</span></nav>
+    <h1 class="reveal" data-i18n-html="blog.title">Фінансова <em>ясність.</em></h1>
+    <p class="reveal d1" data-i18n="blog.sub">Практичні гайди, AI-інсайти та історії людей, які взяли гроші під контроль.</p>
+
+    <div class="topic-bar reveal d2">
+      <button class="topic-pill active" data-i18n="topic.all">Усі</button>
+      <a href="/blog/tema/budzhetuvannya/" class="topic-pill" data-i18n="topic.budgeting">Бюджетування</a>
+      <a href="/blog/tema/ai-u-finansakh/" class="topic-pill" data-i18n="topic.ai">AI у фінансах</a>
+      <a href="/blog/tema/zaoshchadzhennya/" class="topic-pill" data-i18n="topic.saving">Заощадження</a>
+      <a href="/blog/tema/produkt/" class="topic-pill" data-i18n="topic.product">Продукт</a>
+      <a href="/blog/tema/istoriyi/" class="topic-pill" data-i18n="topic.stories">Історії</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- FEATURED POST -->
+    <a href="/blog/yak-zhyty-na-15000-grn/" class="featured reveal">
+      <div class="featured-img">
+        <div class="thumb" style="background:linear-gradient(135deg,#D6EFFB 0%,#ECE7FE 40%,#FFE6D4 100%)"></div>
+        <span class="badge" data-i18n="blog.featured_badge">Обрана стаття</span>
+      </div>
+      <div class="featured-body">
+        <div class="featured-topic" data-i18n="topic.budgeting">Бюджетування</div>
+        <h2 data-i18n-html="blog.f_title">Як жити на 15 000 грн <em>і не сходити з розуму</em></h2>
+        <p class="excerpt" data-i18n="blog.f_excerpt">Реалістичний бюджет на мінімальну зарплату в Україні: покроковий розподіл, що працює щодня, а не тільки першого числа. Розбираємо реальний кейс з FinDone.</p>
+        <div class="featured-meta">
+          <div class="av">ОК</div>
+          <div>
+            <div class="nm" data-i18n="blog.f_author">Олексій Кравченко</div>
+            <div><span data-i18n="blog.f_date">12 березня 2026</span> <span class="sep"></span> <span data-i18n="blog.f_read">8 хв читання</span></div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- POSTS GRID -->
+    <div class="posts-grid">
+
+      <a href="/blog/ai-katehoryzatsiya/" class="post-card reveal">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#FFE6D4,#FF8E5B55)"></div>
+          <span class="topic-tag" data-i18n="topic.ai">AI у фінансах</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p1_title">AI-категоризація: як FinDone розуміє ваші транзакції</h3>
+          <p class="excerpt" data-i18n="blog.p1_excerpt">Як модель, навчена на мільйонах транзакцій, визначає, що «Сільпо» — це продукти, а P2P переказ — це обід з друзями.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--mint-2),var(--mint))">АС</div>
+            <span class="nm" data-i18n="blog.p1_author">Анна Соловйова</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p1_date">8 бер 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p1_read">6 хв</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/yak-zhyty-na-15000-grn/" class="post-card reveal d1">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#D6EFFB,#00A3E133)"></div>
+          <span class="topic-tag" data-i18n="topic.saving">Заощадження</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p2_title">5 підписок, які ви забули скасувати</h3>
+          <p class="excerpt" data-i18n="blog.p2_excerpt">Середній користувач FinDone знаходить ₴1,200 «невидимих» підписок на місяць. Покажемо, де вони ховаються.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--lilac-2),var(--lilac))">ОК</div>
+            <span class="nm" data-i18n="blog.p2_author">Олексій Кравченко</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p2_date">3 бер 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p2_read">5 хв</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/yak-zhyty-na-15000-grn/" class="post-card reveal d2">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#ECE7FE,#8B7CF633)"></div>
+          <span class="topic-tag" data-i18n="topic.product">Продукт</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p3_title">Fin Voice: як записати витрату голосом за 3 секунди</h3>
+          <p class="excerpt" data-i18n="blog.p3_excerpt">Покроковий гайд по Fin Voice — голосовому введенню операцій. Працює українською, англійською та іспанською.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--peach-2),var(--peach))">АС</div>
+            <span class="nm" data-i18n="blog.p3_author">Анна Соловйова</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p3_date">28 лют 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p3_read">4 хв</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/yak-zhyty-na-15000-grn/" class="post-card reveal">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#E9DFC7,#FBFAF7)"></div>
+          <span class="topic-tag" data-i18n="topic.budgeting">Бюджетування</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p4_title">Правило 50/30/20: працює чи ні?</h3>
+          <p class="excerpt" data-i18n="blog.p4_excerpt">Розбираємо найвідоміший бюджетний фреймворк на реальних даних 2,000+ українських користувачів FinDone.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--mint-2),var(--mint))">ОК</div>
+            <span class="nm" data-i18n="blog.p4_author">Олексій Кравченко</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p4_date">22 лют 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p4_read">7 хв</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/yak-zhyty-na-15000-grn/" class="post-card reveal d1">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#D6EFFB,#FFE6D4)"></div>
+          <span class="topic-tag" data-i18n="topic.stories">Історії</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p5_title">Як Марія накопичила на подорож за 4 місяці</h3>
+          <p class="excerpt" data-i18n="blog.p5_excerpt">Історія дизайнерки з Києва, яка вперше в житті побачила, куди йдуть гроші — і перестала жити від зарплати до зарплати.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--peach-2),var(--peach))">АС</div>
+            <span class="nm" data-i18n="blog.p5_author">Анна Соловйова</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p5_date">15 лют 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p5_read">6 хв</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/yak-zhyty-na-15000-grn/" class="post-card reveal d2">
+        <div class="img">
+          <div class="thumb" style="background:linear-gradient(135deg,#ECE7FE,#D6EFFB)"></div>
+          <span class="topic-tag" data-i18n="topic.product">Продукт</span>
+        </div>
+        <div class="body">
+          <h3 data-i18n="blog.p6_title">Що нового у FinDone 4.2: Fin Import та спільний бюджет</h3>
+          <p class="excerpt" data-i18n="blog.p6_excerpt">Огляд останнього оновлення: завантажуйте PDF/CSV виписки й автоматична категоризація зробить усе за вас.</p>
+          <div class="card-meta">
+            <div class="av" style="background:linear-gradient(135deg,var(--lilac-2),var(--lilac))">ОК</div>
+            <span class="nm" data-i18n="blog.p6_author">Олексій Кравченко</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p6_date">10 лют 2026</span>
+            <span class="sep"></span>
+            <span data-i18n="blog.p6_read">4 хв</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="load-more reveal">
+      <button class="btn btn-outline" data-i18n="blog.load_more">Завантажити ще →</button>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter reveal">
+      <h2 data-i18n-html="blog.nl_title">Фінансова <em>ясність</em> раз на тиждень.</h2>
+      <p data-i18n="blog.nl_sub">Одна стаття щотижня: конкретна порада, реальний кейс, без спаму. Скасувати в 1 клік.</p>
+      <div class="nl-form">
+        <input type="email" data-i18n-attr="placeholder" data-i18n="blog.nl_placeholder" placeholder="ваш@email.com">
+        <button class="btn btn-primary" data-i18n="blog.nl_btn">Підписатись</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="/"><span class="logo-mark"></span>FinDone</a>
+        <p class="blurb" data-i18n="footer.blurb">Фінансовий застосунок, що автоматично веде ваш бюджет, знаходить, де ви переплачуєте, і допомагає досягати цілей швидше.</p>
+      </div>
+      <div>
+        <h5 data-i18n="footer.h1">Продукт</h5>
+        <a href="/#features" data-i18n="nav.features">Можливості</a>
+        <a href="/#pricing" data-i18n="nav.pricing">Тарифи</a>
+        <a href="/blog/" data-i18n="nav.blog_link">Блог</a>
+      </div>
+      <div>
+        <h5 data-i18n="footer.h2">Компанія</h5>
+        <a href="/blog/avtory/" data-i18n="footer.authors">Автори</a>
+        <a href="#" data-i18n="footer.contact">Контакти</a>
+      </div>
+      <div>
+        <h5 data-i18n="footer.h3">Правове</h5>
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+        <a href="#" data-i18n="footer.terms">Terms</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span data-i18n="footer.copy">© 2026 FinDone. Зроблено з ♥ у Києві.</span>
+      <span class="mono">v4.2.0</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const I18N={
+uk:{
+'blog.meta_title':'Блог FinDone — Поради, інсайти та гайди з особистих фінансів',
+'blog.meta_desc':'Практичні статті про ведення бюджету, AI у фінансах, поради щодо економії та огляди можливостей FinDone.',
+'nav.home':'Головна','nav.blog_link':'Блог','nav.pricing':'Тарифи','nav.faq':'FAQ',
+'nav.signin':'Увійти','nav.cta':'Почати','nav.features':'Можливості',
+'blog.crumb':'Блог',
+'blog.title':'Фінансова <em>ясність.</em>',
+'blog.sub':'Практичні гайди, AI-інсайти та історії людей, які взяли гроші під контроль.',
+'topic.all':'Усі','topic.budgeting':'Бюджетування','topic.ai':'AI у фінансах','topic.saving':'Заощадження','topic.product':'Продукт','topic.stories':'Історії',
+'blog.featured_badge':'Обрана стаття',
+'blog.f_title':'Як жити на 15 000 грн <em>і не сходити з розуму</em>',
+'blog.f_excerpt':'Реалістичний бюджет на мінімальну зарплату в Україні: покроковий розподіл, що працює щодня, а не тільки першого числа. Розбираємо реальний кейс з FinDone.',
+'blog.f_author':'Олексій Кравченко','blog.f_date':'12 березня 2026','blog.f_read':'8 хв читання',
+'blog.p1_title':'AI-категоризація: як FinDone розуміє ваші транзакції',
+'blog.p1_excerpt':'Як модель, навчена на мільйонах транзакцій, визначає, що «Сільпо» — це продукти, а P2P переказ — це обід з друзями.',
+'blog.p1_author':'Анна Соловйова','blog.p1_date':'8 бер 2026','blog.p1_read':'6 хв',
+'blog.p2_title':'5 підписок, які ви забули скасувати',
+'blog.p2_excerpt':'Середній користувач FinDone знаходить ₴1,200 «невидимих» підписок на місяць. Покажемо, де вони ховаються.',
+'blog.p2_author':'Олексій Кравченко','blog.p2_date':'3 бер 2026','blog.p2_read':'5 хв',
+'blog.p3_title':'Fin Voice: як записати витрату голосом за 3 секунди',
+'blog.p3_excerpt':'Покроковий гайд по Fin Voice — голосовому введенню операцій. Працює українською, англійською та іспанською.',
+'blog.p3_author':'Анна Соловйова','blog.p3_date':'28 лют 2026','blog.p3_read':'4 хв',
+'blog.p4_title':'Правило 50/30/20: працює чи ні?',
+'blog.p4_excerpt':'Розбираємо найвідоміший бюджетний фреймворк на реальних даних 2,000+ українських користувачів FinDone.',
+'blog.p4_author':'Олексій Кравченко','blog.p4_date':'22 лют 2026','blog.p4_read':'7 хв',
+'blog.p5_title':'Як Марія накопичила на подорож за 4 місяці',
+'blog.p5_excerpt':'Історія дизайнерки з Києва, яка вперше в житті побачила, куди йдуть гроші — і перестала жити від зарплати до зарплати.',
+'blog.p5_author':'Анна Соловйова','blog.p5_date':'15 лют 2026','blog.p5_read':'6 хв',
+'blog.p6_title':'Що нового у FinDone 4.2: Fin Import та спільний бюджет',
+'blog.p6_excerpt':'Огляд останнього оновлення: завантажуйте PDF/CSV виписки й автоматична категоризація зробить усе за вас.',
+'blog.p6_author':'Олексій Кравченко','blog.p6_date':'10 лют 2026','blog.p6_read':'4 хв',
+'blog.load_more':'Завантажити ще →',
+'blog.nl_title':'Фінансова <em>ясність</em> раз на тиждень.',
+'blog.nl_sub':'Одна стаття щотижня: конкретна порада, реальний кейс, без спаму. Скасувати в 1 клік.',
+'blog.nl_placeholder':'ваш@email.com','blog.nl_btn':'Підписатись',
+'footer.blurb':'Фінансовий застосунок, що автоматично веде ваш бюджет.',
+'footer.h1':'Продукт','footer.h2':'Компанія','footer.h3':'Правове',
+'footer.authors':'Автори','footer.contact':'Контакти','footer.privacy':'Privacy','footer.terms':'Terms',
+'footer.copy':'© 2026 FinDone. Зроблено з ♥ у Києві.'
+},
+en:{
+'blog.meta_title':'FinDone Blog — AI Personal Finance Tips, Insights & Guides',
+'blog.meta_desc':'Practical articles on budgeting, AI in finance, saving tips and FinDone feature deep-dives.',
+'nav.home':'Home','nav.blog_link':'Blog','nav.pricing':'Pricing','nav.faq':'FAQ',
+'nav.signin':'Sign in','nav.cta':'Get started','nav.features':'Features',
+'blog.crumb':'Blog',
+'blog.title':'Financial <em>clarity.</em>',
+'blog.sub':'Practical guides, AI insights, and stories from people who took control of their money.',
+'topic.all':'All','topic.budgeting':'Budgeting','topic.ai':'AI in Finance','topic.saving':'Saving','topic.product':'Product','topic.stories':'Stories',
+'blog.featured_badge':'Featured',
+'blog.f_title':'How to live on $1,200/month <em>without losing your mind</em>',
+'blog.f_excerpt':'A realistic budget breakdown that works every day, not just on payday. We walk through a real FinDone user case, step by step.',
+'blog.f_author':'Alex Kravchenko','blog.f_date':'Mar 12, 2026','blog.f_read':'8 min read',
+'blog.p1_title':'AI categorization: how FinDone understands your transactions',
+'blog.p1_excerpt':'How a model trained on millions of transactions knows "Whole Foods" is groceries and that P2P transfer was lunch with friends.',
+'blog.p1_author':'Anna Soloviova','blog.p1_date':'Mar 8, 2026','blog.p1_read':'6 min',
+'blog.p2_title':'5 subscriptions you forgot to cancel',
+'blog.p2_excerpt':'The average FinDone user finds $45 in "invisible" subscriptions per month. We\'ll show you where they hide.',
+'blog.p2_author':'Alex Kravchenko','blog.p2_date':'Mar 3, 2026','blog.p2_read':'5 min',
+'blog.p3_title':'Fin Voice: log an expense by voice in 3 seconds',
+'blog.p3_excerpt':'Step-by-step guide to Fin Voice — voice transaction entry. Works in English, Ukrainian and Spanish.',
+'blog.p3_author':'Anna Soloviova','blog.p3_date':'Feb 28, 2026','blog.p3_read':'4 min',
+'blog.p4_title':'The 50/30/20 rule: does it actually work?',
+'blog.p4_excerpt':'We analyze the most famous budgeting framework using real data from 2,000+ FinDone users.',
+'blog.p4_author':'Alex Kravchenko','blog.p4_date':'Feb 22, 2026','blog.p4_read':'7 min',
+'blog.p5_title':'How Maria saved for a trip in just 4 months',
+'blog.p5_excerpt':'The story of a designer from Kyiv who finally saw where her money was going — and stopped living paycheck to paycheck.',
+'blog.p5_author':'Anna Soloviova','blog.p5_date':'Feb 15, 2026','blog.p5_read':'6 min',
+'blog.p6_title':'What\'s new in FinDone 4.2: Fin Import & shared budgets',
+'blog.p6_excerpt':'Latest update overview: upload PDF/CSV statements and automatic categorization does the rest.',
+'blog.p6_author':'Alex Kravchenko','blog.p6_date':'Feb 10, 2026','blog.p6_read':'4 min',
+'blog.load_more':'Load more →',
+'blog.nl_title':'Financial <em>clarity,</em> once a week.',
+'blog.nl_sub':'One article per week: concrete advice, real case, zero spam. Unsubscribe in 1 click.',
+'blog.nl_placeholder':'your@email.com','blog.nl_btn':'Subscribe',
+'footer.blurb':'The personal finance app that automatically tracks your budget.',
+'footer.h1':'Product','footer.h2':'Company','footer.h3':'Legal',
+'footer.authors':'Authors','footer.contact':'Contact','footer.privacy':'Privacy','footer.terms':'Terms',
+'footer.copy':'© 2026 FinDone. Made with ♥ in Kyiv.'
+},
+es:{
+'blog.meta_title':'Blog FinDone — Consejos de Finanzas Personales con IA',
+'blog.meta_desc':'Artículos prácticos sobre presupuesto, IA en finanzas, consejos de ahorro y guías de FinDone.',
+'nav.home':'Inicio','nav.blog_link':'Blog','nav.pricing':'Precios','nav.faq':'FAQ',
+'nav.signin':'Iniciar sesión','nav.cta':'Empezar','nav.features':'Funciones',
+'blog.crumb':'Blog',
+'blog.title':'Claridad <em>financiera.</em>',
+'blog.sub':'Guías prácticas, insights con IA e historias de personas que tomaron el control de su dinero.',
+'topic.all':'Todos','topic.budgeting':'Presupuesto','topic.ai':'IA en Finanzas','topic.saving':'Ahorro','topic.product':'Producto','topic.stories':'Historias',
+'blog.featured_badge':'Destacado',
+'blog.f_title':'Cómo vivir con $1,200/mes <em>sin perder la cabeza</em>',
+'blog.f_excerpt':'Un presupuesto realista que funciona todos los días, no solo el día de pago. Analizamos un caso real de FinDone, paso a paso.',
+'blog.f_author':'Alex Kravchenko','blog.f_date':'12 mar 2026','blog.f_read':'8 min de lectura',
+'blog.p1_title':'Categorización IA: cómo FinDone entiende tus transacciones',
+'blog.p1_excerpt':'Cómo un modelo entrenado con millones de transacciones sabe que "Mercadona" es comida y esa transferencia P2P fue el almuerzo.',
+'blog.p1_author':'Anna Soloviova','blog.p1_date':'8 mar 2026','blog.p1_read':'6 min',
+'blog.p2_title':'5 suscripciones que olvidaste cancelar',
+'blog.p2_excerpt':'El usuario promedio de FinDone encuentra $45 en suscripciones "invisibles" al mes. Te mostramos dónde se esconden.',
+'blog.p2_author':'Alex Kravchenko','blog.p2_date':'3 mar 2026','blog.p2_read':'5 min',
+'blog.p3_title':'Fin Voice: registra un gasto por voz en 3 segundos',
+'blog.p3_excerpt':'Guía paso a paso de Fin Voice — entrada de operaciones por voz. Funciona en español, inglés y ucraniano.',
+'blog.p3_author':'Anna Soloviova','blog.p3_date':'28 feb 2026','blog.p3_read':'4 min',
+'blog.p4_title':'La regla 50/30/20: ¿funciona o no?',
+'blog.p4_excerpt':'Analizamos el framework de presupuesto más famoso con datos reales de más de 2,000 usuarios de FinDone.',
+'blog.p4_author':'Alex Kravchenko','blog.p4_date':'22 feb 2026','blog.p4_read':'7 min',
+'blog.p5_title':'Cómo María ahorró para un viaje en solo 4 meses',
+'blog.p5_excerpt':'La historia de una diseñadora de Kyiv que por fin vio a dónde iba su dinero — y dejó de vivir de sueldo a sueldo.',
+'blog.p5_author':'Anna Soloviova','blog.p5_date':'15 feb 2026','blog.p5_read':'6 min',
+'blog.p6_title':'Novedades en FinDone 4.2: Fin Import y presupuestos compartidos',
+'blog.p6_excerpt':'Resumen de la última actualización: sube extractos PDF/CSV y la categorización automática hace el resto.',
+'blog.p6_author':'Alex Kravchenko','blog.p6_date':'10 feb 2026','blog.p6_read':'4 min',
+'blog.load_more':'Cargar más →',
+'blog.nl_title':'Claridad <em>financiera,</em> una vez por semana.',
+'blog.nl_sub':'Un artículo semanal: consejo concreto, caso real, cero spam. Cancela en 1 clic.',
+'blog.nl_placeholder':'tu@email.com','blog.nl_btn':'Suscribirse',
+'footer.blurb':'La app de finanzas que automáticamente lleva tu presupuesto.',
+'footer.h1':'Producto','footer.h2':'Empresa','footer.h3':'Legal',
+'footer.authors':'Autores','footer.contact':'Contacto','footer.privacy':'Privacidad','footer.terms':'Términos',
+'footer.copy':'© 2026 FinDone. Hecho con ♥ en Kyiv.'
+}
+};
+const FLAGS={uk:'🇺🇦',en:'🇺🇸',es:'🇪🇸'},LBLS={uk:'UA',en:'EN',es:'ES'};
+const LANG_URLS={uk:'/blog/',en:'/en/blog/',es:'/es/blog/'};
+const PAGE_LANG='uk';
+function applyLang(l){if(!I18N[l])l='uk';const d=I18N[l];document.documentElement.lang=l;document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.getAttribute('data-i18n');if(d[k]!==undefined)e.textContent=d[k]});document.querySelectorAll('[data-i18n-html]').forEach(e=>{const k=e.getAttribute('data-i18n-html');if(d[k]!==undefined)e.innerHTML=d[k]});document.querySelectorAll('[data-i18n-attr]').forEach(e=>{const a=e.getAttribute('data-i18n-attr'),k=e.getAttribute('data-i18n');if(d[k]!==undefined)e.setAttribute(a,d[k])});if(d['blog.meta_title'])document.title=d['blog.meta_title'];const c=document.getElementById('langCurrent');if(c)c.textContent=FLAGS[l];const lb=document.querySelector('#langSw button .lbl');if(lb)lb.textContent=LBLS[l];document.querySelectorAll('[data-lang-btn]').forEach(b=>b.classList.toggle('active',b.getAttribute('data-lang-btn')===l))}
+function setLang(l){if(l===PAGE_LANG){document.getElementById('langSw').classList.remove('open');return}if(LANG_URLS[l])window.location.href=LANG_URLS[l]}
+function toggleLang(e){e.stopPropagation();document.getElementById('langSw').classList.toggle('open')}
+document.addEventListener('click',e=>{const s=document.getElementById('langSw');if(s&&!s.contains(e.target))s.classList.remove('open')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+applyLang(PAGE_LANG);
+</script>
+</body>
+</html>
